@@ -2,65 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChatGPT Generated Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="nav-links">
+    <nav class="navbar">
+      <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#video">Video</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#form">Contact</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <h1>Welcome to My Website</h1>
+    <h1>Welcome to the Colorful Web!</h1>
   </header>
 
   <section id="home" class="section">
     <h2>Home Section</h2>
-    <p>This is the home section of the website. It contains a basic description of the website.</p>
-    <button onclick="alert('Welcome!')">Click Me</button>
+    <p>This is a vibrant, responsive webpage built using HTML, CSS, and JavaScript.</p>
+    <button onclick="handleClick()">Click Me!</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About This Site</h2>
+    <p>We explore creative layouts, dynamic forms, and fun designs.</p>
+    <ul>
+      <li>Modern design</li>
+      <li>Responsive layout</li>
+      <li>Interactive features</li>
+    </ul>
+    <img src="https://source.unsplash.com/400x200/?technology,abstract" alt="Abstract" />
   </section>
 
   <section id="video" class="section">
-    <h2>Video Section</h2>
-    <video width="400" controls>
-      <source src="sample.mp4" type="video/mp4" />
+    <h2>Watch a Video</h2>
+    <video width="500" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>This section gives information about the website or the creator.</p>
-    <ul>
-      <li>Informative Content</li>
-      <li>User Friendly</li>
-      <li>Responsive Design</li>
-    </ul>
-  </section>
-
-  <section id="form" class="section">
+  <section id="contact" class="section">
     <h2>Contact Us</h2>
     <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required /><br />
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required /><br />
-
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br />
-
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 ChatGPT Webpage. All rights reserved.</p>
+    <p>© 2025 Colorful Web. Powered by HTML, CSS & JS.</p>
   </footer>
 
   <script src="script.js"></script>
